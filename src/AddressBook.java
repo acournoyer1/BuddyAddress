@@ -1,6 +1,10 @@
 
 import java.util.ArrayList;
 
+/*
+* Wazaaaaap
+*/
+
 public class AddressBook {
 	
 	private ArrayList<BuddyInfo> buddies = new ArrayList<>();
