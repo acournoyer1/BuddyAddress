@@ -1,3 +1,4 @@
+import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -37,7 +38,7 @@ public class GUI extends JFrame{
 		this.setJMenuBar(jMenuBar);
 		this.add(t);
 		this.setSize(500, 400);
-		this.setLocation(700, 300);
+		this.setLocation(700, 400);
 	}
 	
 	public void refresh()
@@ -78,7 +79,11 @@ public class GUI extends JFrame{
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				
+				JFrame dialog = new JFrame("Add Contact");
+				Point p = getLocation();
+				dialog.setLocation((int)p.getX() + getWidth()/4, (int)p.getY() + getHeight()/3);
+				dialog.setSize(300, 200);
+				dialog.setVisible(true);
 			}
 		});
 		removeBuddy.addActionListener(new ActionListener()
