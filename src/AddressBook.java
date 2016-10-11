@@ -1,9 +1,6 @@
 
 import java.util.ArrayList;
-
-/*
-* Wazaaaaap boyz
-*/
+import javax.swing.*;;
 
 public class AddressBook {
 	
@@ -19,12 +16,10 @@ public class AddressBook {
 		
 	}
 	
-	public static void main(String args[]) {
-		System.out.print("Top Kek");
-		BuddyInfo bI = new BuddyInfo();
-		AddressBook ab = new AddressBook();
-		ab.addBuddy(bI);
-		ab.removeBuddy(bI);
+	public static void main(String args[]) 
+	{
+		GUI gui = new GUI();
+		gui.setUp();
 	}
 
 }
