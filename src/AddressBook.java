@@ -1,25 +1,32 @@
 
-import java.util.ArrayList;
-import javax.swing.*;;
+import java.util.ArrayList;;
 
 public class AddressBook {
 	
-	private ArrayList<BuddyInfo> buddies = new ArrayList<>();
+	private ArrayList<BuddyInfo> buddies;
 	
+	public AddressBook()
+	{
+		buddies = new ArrayList<>();
+	}
 	
-	public void addBuddy(BuddyInfo bi) {
+	public void addBuddy(BuddyInfo bi)
+	{
 		buddies.add(bi);
 	}
 	
-	public void removeBuddy(BuddyInfo bi) {
-		buddies.remove(bi);
-		
+	public void removeBuddy(BuddyInfo bi) 
+	{
+		buddies.remove(bi);	
 	}
 	
-	public static void main(String args[]) 
+	public int size()
 	{
-		GUI gui = new GUI();
-		gui.setUp();
+		return buddies.size();
 	}
-
+	
+	public void clear()
+	{
+		buddies.clear();
+	}
 }
